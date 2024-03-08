@@ -1,0 +1,40 @@
+header {
+    font-size: 1.1rem;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 0.5rem 0.5rem;
+    nav {
+        display: flex;
+        justify-content:space-between;
+        align-content: flex-start;
+        gap: 3rem;
+        margin-right: 2%;
+        margin-left: 8%;
+        font-family: 'Comfortaa';
+        position: relative;
+        z-index: 1000;
+    }
+
+    img {
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+
+    .header_menu {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 7rem;
+    }
+
+    .header_menu--items{
+        text-align: center;
+    }
+
+    .header_link{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+}
