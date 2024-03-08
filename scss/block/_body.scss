@@ -172,6 +172,132 @@ main {
     }
 }
 
+    // СЕКЦИЯ С ПРЕПОДАВАТЕЛЯМИ
+
+    
+.trainers_about{
+    min-height: 110vh;
+
+
+    h2.trainers_title{
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    }
+
+    p.trainers_title__inner{
+        display: flex;
+        font-family: 'comfortaa';
+        
+    }
+
+
+    .trainers_box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+
+        h3.trainers_title{
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+        }  
+        
+        .trainers_1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .trainers_2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        img.trainers_preview-1{
+            max-width: 35rem;
+            max-height: 35rem;
+            border-radius: 100px 0 100px 0;
+            box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        img.trainers_preview-2{
+            max-width: 35rem;
+            max-height: 35rem;
+            border-radius: 0 100px 0 100px;
+            box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+        }
+
+    
+    }
+}
+  
+
+// СЕКЦИЯ С ЦЕНАМИ
+
+.price_choose{
+    min-height: 110vh;
+
+    .price__inner{
+        h2.price__inner-title{
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            padding: 0 0 8rem 0;
+        }
+        .price_box{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+
+            .box{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                flex-direction: column;
+
+                p,h2.box{
+                    font-family: 'comfortaa';
+                }
+
+                h3{
+                    display: flex;
+                    justify-content: center;
+                }
+
+                button{
+                    background-color: #ff8206 ;
+                    border-radius: 0 20px;
+                    max-width: 484px;
+                    cursor: pointer;
+                    padding: 18px;
+                    text-align: center;
+                    width: 100%;
+                    transition: .5s ease all;
+                    color: #0a0a0a;
+                    
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 45px;
+                    transition: .5s ease all;
+                }
+
+                button:hover{
+                    background-color:#e6d3be;
+                    color: #262C27;
+                }
+            }
+        }
+    }
+}
+
+
+
+
 
 
 
