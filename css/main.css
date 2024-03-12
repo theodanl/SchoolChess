@@ -122,7 +122,7 @@ ul, li, a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 110vh;
+  min-height: 100vh;
   z-index: 1;
   position: relative;
   border-radius: 0 0 2rem 2rem;
@@ -136,7 +136,7 @@ main {
   text-align: center;
 }
 main .main_title {
-  min-height: 110vh;
+  min-height: 80vh;
 }
 main .main_title img.elements__img-chess {
   min-width: 15rem;
@@ -165,7 +165,7 @@ main .main_title-inner__school h2.main_tutle-text {
 
 .gallery__reserv {
   margin-top: 1rem;
-  min-height: 110vh;
+  min-height: 80vh;
 }
 .gallery__reserv img {
   max-width: 30rem;
@@ -222,7 +222,7 @@ main .main_title-inner__school h2.main_tutle-text {
 }
 
 .description__ul {
-  min-height: 110vh;
+  min-height: 80vh;
 }
 .description__ul h3.description__info_title {
   padding: 0 1rem 1rem 0;
@@ -255,7 +255,7 @@ main .main_title-inner__school h2.main_tutle-text {
 }
 
 .trainers_about {
-  min-height: 110vh;
+  min-height: 80vh;
 }
 .trainers_about h2.trainers_title {
   display: flex;
@@ -302,7 +302,7 @@ main .main_title-inner__school h2.main_tutle-text {
 }
 
 .price_choose {
-  min-height: 110vh;
+  min-height: 80vh;
 }
 .price_choose .price__inner h2.price__inner-title {
   display: flex;
@@ -353,6 +353,9 @@ main .main_title-inner__school h2.main_tutle-text {
   background: url(../img/review.png) center no-repeat;
 }
 
+.review {
+  max-height: 100vh;
+}
 .review .review_title {
   display: flex;
   justify-content: center;
@@ -422,7 +425,7 @@ main .main_title-inner__school h2.main_tutle-text {
 .review .comment-box .comment-group-box .comment .comment-header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 25%;
 }
@@ -445,6 +448,119 @@ main .main_title-inner__school h2.main_tutle-text {
 }
 .review .comment-box .comment-group-box .comment:last-child {
   margin-right: 0;
+}
+
+.walpaper_register {
+  background: url(../img/register.png) center no-repeat;
+}
+
+.register {
+  min-height: 80vh;
+}
+.register .register-box {
+  display: flex;
+  justify-content: center;
+}
+.register .register-box .register_inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.register .register-box .register_inner .form-content h2.form_title {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.register .register-box .register_inner .form-content p.form_subtitle {
+  margin-top: 2rem;
+  font-family: "comfortaa";
+  font-weight: bolder;
+}
+.register .register-box .register_inner .form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  height: 50%;
+}
+.register .register-box .register_inner .form-box input.form_input {
+  color: #000000;
+  width: 50%;
+  padding: 10px;
+  font-size: inherit;
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(12, 12, 12, 0.4);
+}
+.register .register-box .register_inner .form-box input.form_input::placeholder {
+  color: #050505;
+}
+.register .register-box .register_inner .form-box input.form_input:focus {
+  outline: none;
+  border-bottom-color: transparent;
+}
+.register .register-box .register_inner .form-box input.form_btn {
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #ff2919;
+  color: #fff;
+  width: 50%;
+  height: 20%;
+  padding: 10px 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.register .register-box .register_inner .form-box input.form_btn:hover {
+  background-color: #f38d08;
+  color: #fff;
+}
+.register .register-box .register_inner .form_preview img {
+  max-width: 40rem;
+  max-height: 40rem;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.footer {
+  font-size: 1.1rem;
+  background-color: #1c2323;
+}
+.footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 3rem;
+  margin-right: 2%;
+  margin-left: 8%;
+  font-family: "Comfortaa";
+  position: relative;
+  z-index: 1000;
+}
+.footer nav li {
+  color: #ffffff;
+}
+.footer nav img {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+.footer nav .footer_menu {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 7rem;
+}
+.footer nav .footer_menu .footer_menu--items {
+  text-align: center;
+}
+.footer nav .footer_link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.footer nav .footer_link .footer-items__number {
+  color: #ffffff;
 }
 
 .scroll-to-top-btn {

@@ -58,7 +58,7 @@ NewLeft[0].style.opacity = 0.7;
 
 
 arrowRight.addEventListener("click", function() {
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 4; i++) {
         if (NewLeft[i]) {
             NewLeft[i].style.width = 500/21 + '%';
             NewLeft[i].style.height = 60 + '%';
@@ -121,11 +121,12 @@ arrowRight.addEventListener("click", function() {
             }
         break;
     }
+    
 
 })
 
 arrowLeft.addEventListener("click", function() {
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 4; i++) {
         if (NewLeft[i]) {
             NewLeft[i].style.width = 500/21 + '%';
             NewLeft[i].style.height = 60 + '%';
@@ -189,12 +190,4 @@ arrowLeft.addEventListener("click", function() {
         break;
     }
 
-})
-
-window.onload = function() {
-    setTimeout(function() {
-        document.querySelector('.loader-block').style.display = 'none';
-    },1000)
-}
-
-
+});

@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 110vh;
+    min-height: 100vh;
     z-index: 1;
     position: relative;
     border-radius: 0 0 2rem 2rem ;
@@ -18,7 +18,7 @@ main {
     text-align: center;
 
     .main_title{
-        min-height: 110vh;
+        min-height: 80vh;
 
 
         img.elements__img-chess{
@@ -64,7 +64,7 @@ main {
 
 .gallery__reserv{
     margin-top: 1rem;
-    min-height: 110vh;
+    min-height: 80vh;
 
     img {
         max-width: 30rem;
@@ -135,7 +135,7 @@ main {
 // СЕКЦИЯ С ОПИСАНИЕМ ПРЕИМУЩЕСТВ
 
 .description__ul{
-    min-height: 110vh;
+    min-height: 80vh;
 
     h3.description__info_title{
         padding: 0 1rem 1rem 0;
@@ -176,7 +176,7 @@ main {
 
     
 .trainers_about{
-    min-height: 110vh;
+    min-height: 80vh;
 
 
     h2.trainers_title{
@@ -239,7 +239,7 @@ main {
 // СЕКЦИЯ С ЦЕНАМИ
 
 .price_choose{
-    min-height: 110vh;
+    min-height: 80vh;
 
     .price__inner{
         h2.price__inner-title{
@@ -258,7 +258,7 @@ main {
                 flex-wrap: wrap;
                 gap: 2rem;
                 flex-direction: column;
-
+            
                 p,h2.box{
                     font-family: 'comfortaa';
                 }
@@ -299,13 +299,12 @@ main {
 
 // СЕКЦИЯ С ОТЗЫВАМИ
 
-
-
 .walpaper_review{
     background: url(../img/review.png) center no-repeat;
 }
 
 .review{
+    max-height: 100vh;
     .review_title{
         display: flex;
         justify-content: center;
@@ -383,7 +382,7 @@ main {
                 .comment-header{
                     width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-around;
                     align-items: center;
                     height: 25%;
 
@@ -418,16 +417,150 @@ main {
     }
 }
 
+// СЕКЦИЯ С ФОРМОЙ
+
+.walpaper_register{
+    background: url(../img/register.png) center no-repeat;
+}
+
+.register{
+    min-height: 80vh;
+
+    .register-box{
+        display: flex;
+        justify-content: center;
+
+        .register_inner{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+
+            .form-content{
+                h2.form_title{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+
+                p.form_subtitle{
+                    margin-top: 2rem;
+                    font-family: 'comfortaa';
+                    font-weight: bolder;
+                }
+            }
+
+            .form-box{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+                height: 50%;
+
+
+                input.form_input{
+                    color: #000000;
+                    width: 50%;
+                    padding: 10px;
+                    font-size: inherit;
+                    margin: 10px;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid rgba(12, 12, 12, 0.4);
+                }
+
+                input.form_input::placeholder{
+                    color: #050505;
+                }
+
+                input.form_input:focus {
+                    outline: none; 
+                    border-bottom-color: transparent; 
+                }
+
+                input.form_btn{
+                    border: none;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    background-color: #ff2919;
+                    color: #fff;
+                    width: 50%;
+                    height: 20%;
+                    padding: 10px 50px;
+                    transition: background-color 0.3s, color 0.3s;
+                }
+
+                input.form_btn:hover {
+                    background-color: #f38d08;
+                    color: #fff; 
+                }
+            }
+
+           .form_preview img {
+            max-width: 40rem;
+            max-height: 40rem;
+            box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+           }
+        }
+    }
+
+}
+
+
 
 .footer{
-    nav{
+    font-size: 1.1rem;
+    background-color: #1c2323;
 
+    nav{
+        display: flex;
+        justify-content:space-between;
+        align-content: flex-start;
+        gap: 3rem;
+        margin-right: 2%;
+        margin-left: 8%;
+        font-family: 'Comfortaa';
+        position: relative;
+        z-index: 1000;
+
+        li{
+            color: #ffffff;
+        }
+
+        img{
+            max-width: 3rem;
+            max-height: 3rem;
+        }
+
+        .footer_menu{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            gap: 7rem;
+
+            .footer_menu--items{
+                text-align: center;
+            }
+        }
+
+        .footer_link{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+
+            .footer-items__number{
+                color: #ffffff;
+            }
+        }
     }
+
 }
 
 
 // КНОПКА НА НАЧАЛО СТРАНИЦЫ
-.scroll-to-top-btn {
+.scroll-to-top-btn{
+
     position: fixed;
     bottom: 20px;
     right: 20px;

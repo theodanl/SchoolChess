@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="../chess_school/js/main.js"></script>
     <script defer src="../chess_school/js/scrollbtn.js"></script>
+    
     <!-- ПЛАГИНЫ -->
+    <script defer src="../chess_school/js/libs/jquery_3.6.3.js"></script>
+    <script defer src="../chess_school/js/libs/jquery.mask.js"></script>
+    <script defer src="../chess_school/js/ValidNumber.js"></script>
+    <script src="../chess_school/js/smooth.js" defer></script>
     <script src="../chess_school/js/gsap/gsap.min.js" defer></script>
     <script src="../chess_school/js/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="../chess_school/js/scrollTrigger.js" defer></script>
+    <script src="../chess_school/js/gsap/ScrollTrigger.min.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -167,7 +172,7 @@
                     <div class="walpaper_review">
                         <div class="container">
                             <section class="review" id="review">
-                                <h1 class="review_title">Отзывы наших клиентов</h1>
+                                <h1 class="review_title">Более 200 довольных клиентов</h1>
                                 <div class="comment-block">
                                     <div class="arrow-block">
                                         <input type="button" class="arrow-box" id="arrow-left-comment">
@@ -211,6 +216,29 @@
                                                 </div>
                                                 <h6 class="comment-text" id="subtitle-text4">Это действительно Дом! Здесь уютно и тепло! А какие здесь мастера преподают! Спасибо вам!</h6>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- СЕКЦИЯ С ФОРМОЙ -->
+                    <div class="walpaper_register">
+                        <div class="container">
+                            <section class="register">
+                                <div class="register-box">
+                                    <div class="register_inner">
+                                        <div class="form-content">
+                                            <h2 class="form_title">Записаться на первое бесплатное занятие</h2>
+                                            <p class="form_subtitle">Заполните поля с контактной информацией и мы свяжемся с вами в ближайшее время</p>
+                                            <form action="post" class="form-box form_singin" id="singin_form">
+                                                <input type="text" class="form_input" id="name" placeholder="Ваше Имя" required minlength="3" maxlength="12">
+                                                <input type="tel" class="form_input" id="tel_number_login" placeholder="(999) 999-99-99" minlength="6" maxlength="" required >
+                                                <input type="submit" class="form_btn" id="signin" value="Оставить заявку">
+                                            </form>
+                                        </div>
+                                        <div class="form_preview">
+                                            <img src="../chess_school/img/Boy.png" alt="like" class="form_preview__inner">
                                         </div>
                                     </div>
                                 </div>
