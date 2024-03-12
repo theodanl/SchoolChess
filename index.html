@@ -10,14 +10,14 @@
     <script defer src="../chess_school/js/main.js"></script>
     <script defer src="../chess_school/js/scrollbtn.js"></script>
     
-    <!-- ПЛАГИНЫ -->
+    <!-- ПЛАГИНЫ + валидация -->
     <script defer src="../chess_school/js/libs/jquery_3.6.3.js"></script>
     <script defer src="../chess_school/js/libs/jquery.mask.js"></script>
     <script defer src="../chess_school/js/ValidNumber.js"></script>
     <script src="../chess_school/js/smooth.js" defer></script>
-    <script src="../chess_school/js/gsap/gsap.min.js" defer></script>
-    <script src="../chess_school/js/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="../chess_school/js/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="../chess_school/js/libs/gsap/gsap.min.js"></script>
+    <script src="../chess_school/js/libs/gsap/ScrollSmoother.min.js"></script>
+    <script src="../chess_school/js/libs/gsap/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -266,5 +266,24 @@
             <button id="scrollToTopBtn" class="scroll-to-top-btn"><img class="butUP" src="../chess_school/img/кнопка нверх.png" alt="up"></button>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('.header_menu--items a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1); 
+        const targetSection = document.getElementById(targetId); 
+        
+        if (targetSection) {
+            const offsetTop = targetSection.offsetTop; 
+
+            window.scrollTo({
+                top: offsetTop, 
+                behavior: 'smooth' 
+            });
+        }
+    });
+});
+    </script>
 </body>
 </html>
