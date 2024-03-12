@@ -277,11 +277,10 @@ main {
                     text-align: center;
                     width: 100%;
                     transition: .5s ease all;
-                    color: #0a0a0a;
-                    
+                    color: #ffffff;
                     text-transform: uppercase;
                     font-weight: 700;
-                    font-size: 40px;
+                    font-size: 32px;
                     line-height: 45px;
                     transition: .5s ease all;
                 }
@@ -298,13 +297,133 @@ main {
 
 
 
+// СЕКЦИЯ С ОТЗЫВАМИ
 
 
 
+.walpaper_review{
+    background: url(../img/review.png) center no-repeat;
+}
+
+.review{
+    .review_title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    
+    .arrow-block{
+
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 400;
+
+        .arrow-box{
+            width: calc(300% / 13);
+            height: 300px;
+            border-radius: 50px;
+            opacity: 0;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    .comment-block{
+        height: 900px;
+        width: 100%;
+      
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comment-box{
+        width: 100%;
+        overflow: hidden;
+        height: calc(500% / 9);
+
+        .comment-group-box{
+            justify-content: center;
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            width: calc(2100% / 13);
+            position: relative;
+            left: calc(400% / 13);
+            transition:left ease 1s;
+            height: 100%;
+
+            .comment{
+                width: calc(300% / 21);
+                height: 60%;
+                background-color: #1d1c1c;
+                border-radius: 10%;
+                margin-right: calc(50% / 21);
+                transition: all ease 1s;
+                opacity: .3;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0 100px 0 0;
+
+                h6.comment-text {
+                    color: #ffffff;
+                    font-family: 'comfortaa';
+                    line-height: 1.5rem;
+                }
+                
+
+                .comment-header{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 25%;
+
+                    h5.name-comment{
+                        color: #ffffff;
+                    }
+
+                    .logo-comment-box{
+                        width: 25%;
+                        height: 150%;
+                        background-color: #1c2323;
+                        border-radius: 50%;
+                        overflow: hidden;
+
+                        .comment-logo{
+                            transform: translate3d(-50%,-50%,0);
+                            position: relative;
+                            left: 50%;
+                            top: 50%;
+                            width: 100%;
+                        }
+
+                       
+                    }
+                }
+            }
+
+            .comment:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
 
 
+.footer{
+    nav{
 
-
+    }
+}
 
 
 // КНОПКА НА НАЧАЛО СТРАНИЦЫ

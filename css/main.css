@@ -337,16 +337,114 @@ main .main_title-inner__school h2.main_tutle-text {
   text-align: center;
   width: 100%;
   transition: 0.5s ease all;
-  color: #0a0a0a;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 45px;
   transition: 0.5s ease all;
 }
 .price_choose .price__inner .price_box .box button:hover {
   background-color: #e6d3be;
   color: #262C27;
+}
+
+.walpaper_review {
+  background: url(../img/review.png) center no-repeat;
+}
+
+.review .review_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.review .arrow-block {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 400;
+}
+.review .arrow-block .arrow-box {
+  width: 23.0769230769%;
+  height: 300px;
+  border-radius: 50px;
+  opacity: 0;
+  border: none;
+  cursor: pointer;
+}
+.review .comment-block {
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review .comment-box {
+  width: 100%;
+  overflow: hidden;
+  height: 55.5555555556%;
+}
+.review .comment-box .comment-group-box {
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  width: 161.5384615385%;
+  position: relative;
+  left: 30.7692307692%;
+  transition: left ease 1s;
+  height: 100%;
+}
+.review .comment-box .comment-group-box .comment {
+  width: 14.2857142857%;
+  height: 60%;
+  background-color: #1d1c1c;
+  border-radius: 10%;
+  margin-right: 2.380952381%;
+  transition: all ease 1s;
+  opacity: 0.3;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 100px 0 0;
+}
+.review .comment-box .comment-group-box .comment h6.comment-text {
+  color: #ffffff;
+  font-family: "comfortaa";
+  line-height: 1.5rem;
+}
+.review .comment-box .comment-group-box .comment .comment-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
+}
+.review .comment-box .comment-group-box .comment .comment-header h5.name-comment {
+  color: #ffffff;
+}
+.review .comment-box .comment-group-box .comment .comment-header .logo-comment-box {
+  width: 25%;
+  height: 150%;
+  background-color: #1c2323;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.review .comment-box .comment-group-box .comment .comment-header .logo-comment-box .comment-logo {
+  transform: translate3d(-50%, -50%, 0);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+}
+.review .comment-box .comment-group-box .comment:last-child {
+  margin-right: 0;
 }
 
 .scroll-to-top-btn {
