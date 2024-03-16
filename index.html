@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess School</title>
-    <link rel="shortcut icon" href="../chess_school/img/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
-    <script defer src="../chess_school/js/main.js"></script>
-    <script defer src="../chess_school/js/scrollbtn.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/scrollbtn.js"></script>
     
     <!-- ПЛАГИНЫ + валидация -->
-    <script defer src="../chess_school/js/libs/jquery_3.6.3.js"></script>
-    <script defer src="../chess_school/js/libs/jquery.mask.js"></script>
-    <script defer src="../chess_school/js/ValidNumber.js"></script>
-    <script src="../chess_school/js/smooth.js" defer></script>
-    <script src="../chess_school/js/libs/gsap/gsap.min.js"></script>
-    <script src="../chess_school/js/libs/gsap/ScrollSmoother.min.js"></script>
-    <script src="../chess_school/js/libs/gsap/ScrollTrigger.min.js"></script>
+    <script defer src="./js/libs/jquery_3.6.3.js"></script>
+    <script defer src="./js/libs/jquery.mask.js"></script>
+    <script defer src="./js/ValidNumber.js"></script>
+    <script src="./js/smooth.js" defer></script>
+    <script src="./js/libs/gsap/gsap.min.js"></script>
+    <script src="./js/libs/gsap/ScrollSmoother.min.js"></script>
+    <script src="./js/libs/gsap/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -25,7 +25,7 @@
             <div class="walpaper_main">
                     <header class="header">
                         <nav class="nav">
-                            <li class=" header_menu--items header_menu-items-5"><a href="../chess_school/index.html"><img class="img_logo-header" src="./img/icon.png" alt="logo"></a></li>
+                            <li class=" header_menu--items header_menu-items-5"><a href="./index.html"><img class="img_logo-header" src="./img/icon.png" alt="logo"></a></li>
                             <ul class="header_menu">
                                 <li class=" header_menu--items header_menu-items-1"><a href="#about_school">О школе</a></li>
                                 <li class=" header_menu--items header_menu-items-2"><a href="#trainers">Тренера</a></li>
@@ -183,7 +183,7 @@
                                             <div class="comment" id="none1">
                                                 <div class="comment-header">
                                                     <div class="logo-comment-box">
-                                                        <img src="../chess_school/img/Man 1.jpg" alt="" class="comment-logo">
+                                                        <img src="./img/Man 1.jpg" alt="" class="comment-logo">
                                                     </div>
                                                     <h5 class="name-comment" id="title-text1">man1</h5>
                                                 </div>
@@ -192,7 +192,7 @@
                                             <div class="comment" id="none2">
                                                 <div class="comment-header">
                                                     <div class="logo-comment-box">
-                                                        <img src="../chess_school/img/Man 2.jpg" alt="" class="comment-logo">
+                                                        <img src="./img/Man 2.jpg" alt="" class="comment-logo">
                                                     </div>
                                                     <h5 class="name-comment" id="title-text2">man2</h5>
                                                 </div>
@@ -201,7 +201,7 @@
                                             <div class="comment" id="none3">
                                                 <div class="comment-header">
                                                     <div class="logo-comment-box">
-                                                        <img src="../chess_school/img/Woman 2.jpg" alt="" class="comment-logo">
+                                                        <img src="./img/Woman 2.jpg" alt="" class="comment-logo">
                                                     </div>
                                                     <h5 class="name-comment" id="title-text3">woman1</h5>
                                                 </div>
@@ -210,7 +210,7 @@
                                             <div class="comment" id="none4">
                                                 <div class="comment-header">
                                                     <div class="logo-comment-box">
-                                                        <img src="../chess_school/img/Woman 3.jpg" alt="" class="comment-logo">
+                                                        <img src="./img/Woman 3.jpg" alt="" class="comment-logo">
                                                     </div>
                                                     <h5 class="name-comment" id="title-text4">woman2</h5>
                                                 </div>
@@ -231,14 +231,42 @@
                                         <div class="form-content">
                                             <h2 class="form_title">Записаться на первое бесплатное занятие</h2>
                                             <p class="form_subtitle">Заполните поля с контактной информацией и мы свяжемся с вами в ближайшее время</p>
-                                            <form action="post" class="form-box form_singin" id="singin_form">
-                                                <input type="text" class="form_input" id="name" placeholder="Ваше Имя" required minlength="3" maxlength="12">
-                                                <input type="tel" class="form_input" id="tel_number_login" placeholder="(999) 999-99-99" minlength="6" maxlength="" required >
+                                            <form action="#" method="post" class="form-box form_singin" id="singin_form">
+                                                <input type="text" class="form_input" id="name" name="name" placeholder="Ваше Имя" required minlength="3" maxlength="12">
+                                                <input type="tel" class="form_input" id="tel_number_login" name="tel_number_login" placeholder="(999) 999-99-99" minlength="6" maxlength="" required >
                                                 <input type="submit" class="form_btn" id="signin" value="Оставить заявку">
                                             </form>
+                                            <script>
+                                                document.getElementById("singin_form").addEventListener("submit", function(event) {
+                                                    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+                                        
+                                                    // Получаем значения полей формы
+                                                    var name = document.getElementById("name").value;
+                                                    var phoneNumber = document.getElementById("tel_number_login").value;
+                                        
+                                                    // Создаем объект FormData для отправки данных на сервер
+                                                    var formData = new FormData();
+                                                    formData.append("name", name);
+                                                    formData.append("tel_number_login", phoneNumber);
+                                        
+                                                    // Отправляем данные на сервер с помощью AJAX
+                                                    var xhr = new XMLHttpRequest();
+                                                    xhr.open("POST", "submit.php", true);
+                                                    xhr.onreadystatechange = function() {
+                                                        if (xhr.readyState === XMLHttpRequest.DONE) {
+                                                            if (xhr.status === 200) {
+                                                                console.log("Данные успешно отправлены на сервер.");
+                                                            } else {
+                                                                console.error("Произошла ошибка при отправке данных на сервер.");
+                                                            }
+                                                        }
+                                                    };
+                                                    xhr.send(formData);
+                                                });
+                                            </script>
                                         </div>
                                         <div class="form_preview">
-                                            <img src="../chess_school/img/Boy.png" alt="like" class="form_preview__inner">
+                                            <img src="./img/Boy.png" alt="like" class="form_preview__inner">
                                         </div>
                                     </div>
                                 </div>
@@ -246,14 +274,14 @@
                         </div>
                     </div>
                 </main>
-            </div>
+            
             <footer class="footer">
                 <nav class="nav">
-                    <li class=" footer_menu--items footer_menu-items-5"><a href="../chess_school/index.html"><img class="img_logo-footer" src="./img/icon.png" alt="logo"></a></li>
+                    <li class=" footer_menu--items footer_menu-items-5"><a href="./index.html"><img class="img_logo-footer" src="./img/icon.png" alt="logo"></a></li>
                     <ul class="footer_menu">
                         <li class=" footer_menu--items footer_menu-items-1"><a href="#about_school">О школе</a></li>
                         <li class=" footer_menu--items footer_menu-items-2"><a href="#trainers">Тренера</a></li>
-                        <li class=" footer_menu--items footer_menu-items-3"><a href="">Отзывы</a></li>
+                        <li class=" footer_menu--items footer_menu-items-3"><a href="#review">Отзывы</a></li>
                         <li class=" footer_menu--items footer_menu-items-4"><a href="#price">Стоимость</a></li>
                     </ul>
                     <div class="footer_link">
@@ -263,24 +291,25 @@
                     </div>
                 </nav>
             </footer>
-            <button id="scrollToTopBtn" class="scroll-to-top-btn"><img class="butUP" src="../chess_school/img/кнопка нверх.png" alt="up"></button>
+            </div>
+            <button id="scrollToTopBtn" class="scroll-to-top-btn"><img class="butUP" src="./img/кнопка нверх.png" alt="up"></button>
         </div>
     </div>
     <script>
-        document.querySelectorAll('.header_menu--items a').forEach(anchor => {
+        document.querySelectorAll('.header_menu--items a, .footer_menu--items a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         const targetId = this.getAttribute('href').substring(1); 
         const targetSection = document.getElementById(targetId); 
         
-        if (targetSection) {
+        if (targetSection) {  
             const offsetTop = targetSection.offsetTop; 
 
             window.scrollTo({
                 top: offsetTop, 
                 behavior: 'smooth' 
-            });
+            }); 
         }
     });
 });

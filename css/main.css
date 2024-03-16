@@ -138,7 +138,7 @@ main {
 main .main_title {
   min-height: 80vh;
 }
-main .main_title img.elements__img-chess {
+main .main_title .chess_animation .chess_animation__inner img.elements__img-chess {
   min-width: 15rem;
   min-height: 15rem;
 }
@@ -483,6 +483,7 @@ main .main_title-inner__school h2.main_tutle-text {
   height: 50%;
 }
 .register .register-box .register_inner .form-box input.form_input {
+  font-family: "comfortaa";
   color: #000000;
   width: 50%;
   padding: 10px;
@@ -500,6 +501,7 @@ main .main_title-inner__school h2.main_tutle-text {
   border-bottom-color: transparent;
 }
 .register .register-box .register_inner .form-box input.form_btn {
+  font-family: "comfortaa";
   border: none;
   border-radius: 30px;
   cursor: pointer;

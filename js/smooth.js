@@ -12,3 +12,4 @@ if (ScrollTrigger.isTouch !== 1) {
         smoothTouch: 0.1,
     });
 }
+

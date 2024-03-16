@@ -20,11 +20,23 @@ main {
     .main_title{
         min-height: 80vh;
 
+        .chess_animation{
+           
 
-        img.elements__img-chess{
-            min-width: 15rem;
-            min-height: 15rem;
+            .chess_animation__inner{
+               
+                img.elements__img-chess{
+                    min-width: 15rem;
+                    min-height: 15rem;
+                   
+                }
+
+               
+            }
         }
+
+
+        
     }
 
     .arrow_dynamic__inner img {
@@ -65,7 +77,8 @@ main {
 .gallery__reserv{
     margin-top: 1rem;
     min-height: 80vh;
-
+   
+  
     img {
         max-width: 30rem;
         max-height: 30rem;
@@ -457,6 +470,7 @@ main {
 
 
                 input.form_input{
+                    font-family: 'comfortaa';
                     color: #000000;
                     width: 50%;
                     padding: 10px;
@@ -477,6 +491,7 @@ main {
                 }
 
                 input.form_btn{
+                    font-family: 'comfortaa';
                     border: none;
                     border-radius: 30px;
                     cursor: pointer;
